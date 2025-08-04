@@ -4,7 +4,7 @@ import React from 'react';
 // @ts-ignore
 //import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
+//import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 import ResumeDownload from '../ResumeDownload';
 //import VideoAsset from '../../general/VideoAsset';
 
@@ -44,7 +44,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        //href="https://henryheffernan.vercel.app/"
+                        href="rnj1998.github.io/portfolio-inner-site/"
                     >
                         here
                     </a>{' '}
@@ -72,7 +72,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            //href="https://henryheffernan.vercel.app/"
+                            href="https://riikonen.site/"
                         >
                             <p>
                                 <b>[OS Site]</b> - janneriikonen github tähän
