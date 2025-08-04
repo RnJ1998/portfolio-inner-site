@@ -137,7 +137,7 @@ const AcademicProjects: React.FC<AcademicProjectsProps> = (props) => {
                         </p>
                     </li>
                 </ul>
-                <a href={`${process.env.PUBLIC_URL}/documents/1.Assignment_on_wind_power.pdf`} target="_blank">
+                <a href={`${process.env.PUBLIC_URL}/documents/1.Assignment_on_wind_power.pdf`} target="_blank" rel="noreferrer">
                     <p>
                     View Report Document (PDF)
                     </p>
@@ -179,7 +179,7 @@ const AcademicProjects: React.FC<AcademicProjectsProps> = (props) => {
                         </p>
                     </li>
                 </ul>
-                <a href={`${process.env.PUBLIC_URL}/documents/2.Electrical_distribution.pdf`} target="_blank">
+                <a href={`${process.env.PUBLIC_URL}/documents/2.Electrical_distribution.pdf`} target="_blank" rel="noreferrer">
                     <p>
                     View Report Document (PDF)
                     </p>
@@ -223,7 +223,7 @@ const AcademicProjects: React.FC<AcademicProjectsProps> = (props) => {
                         </p>
                     </li>
                 </ul>
-                <a href={`${process.env.PUBLIC_URL}/documents/4.Network_protection_report.pdf`} target="_blank">
+                <a href={`${process.env.PUBLIC_URL}/documents/4.Network_protection_report.pdf`} target="_blank" rel="noreferrer">
                     <p>
                     View Report Document (PDF)
                     </p>
