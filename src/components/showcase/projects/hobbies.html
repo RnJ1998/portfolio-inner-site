@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-937K718VK1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-937K718VK1');
+    </script>
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+    <script src="silktide-consent-manager.js"></script>
+    <script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: true
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "necessary",
+      name: "Necessary",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Necessary here');
+      }
+    },
+    {
+      id: "analytics",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      defaultValue: true,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytics',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'denied',
+        });
+      }
+    },
+    {
+      id: "advertising",
+      name: "Advertising",
+      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+      onAccept: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_advertising',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomCenter"
+  }
+});
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janne Riikonen - Hobby Projects</title>
+    <style>
+        /* Basic CSS for a clean, professional look - Adapted from index.html */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 { /* Page Title */
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 { /* Section Titles (Asiakasyritys X / Category) */
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 { /* Project Titles */
+            color: #34495e;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        section { /* Container for projects under one H2 */
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        ul { /* For lorem ipsum bullet points */
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        ul li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        .project-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .project-date {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .project-link a { /* Style for the LinkedIn post link */
+            font-size: 0.9em;
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 10px; /* Space above the link */
+            display: inline-block; /* Allows margin-top to work and keeps it inline */
+        }
+        .project-link a:hover {
+            text-decoration: underline;
+        }
+        .project-tech {
+            font-size: 0.9em;
+            margin-top: 15px; /* Added a bit more space above tech after moving */
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .project-tech strong {
+            color: #34495e;
+        }
+        .tech-tag {
+            background-color: #e0f2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #2980b9;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .back-link a {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .back-link a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Hobby Projects</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Beyond my professional life, I'm an avid learner and creator. This page is dedicated to the personal projects I've undertaken in my spare time. These endeavors are driven by curiosity and a passion for exploring new technologies, from data analysis and AI to web development and industrial communication protocols.</p>
+    </section>
+
+    <section>
+        <h2>Personal Endeavors</h2>
+        <div class="project-item">
+            <h3>Vacation Tracker</h3>
+            <!-- <p class="project-date">Ongoing</p> Optional: if you want to add a date/status -->
+            <ul>
+                <li>Developed a Python script utilizing Google Gemini API, Google Sheets, and Gmail.</li>
+                <li>The script filters emails and employs the Gemini API to identify vacation-related messages.</li>
+                <li>Relevant emails are further processed by the Gemini API to extract dates, locations, and destinations.</li>
+                <li>Leverages Gemini API's image generation capabilities to create a "virtual fridge magnet" for each trip.</li>
+                <li>Aims to rediscover lost memories from emails while exploring AI and API functionalities.</li>
+            </ul>
+            <p class="project-link">
+                <a href="https://www.linkedin.com/posts/janne-riikonen-748122180_vibecoding-activity-7318177786643279872-Wr8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI" target="_blank">View Project Post on LinkedIn</a>
+            </p>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">Python</span><span class="tech-tag">Gemini API</span><span class="tech-tag">Google Sheets</span><span class="tech-tag">Gmail API</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Excel List Generator</h3>
+            <!-- <p class="project-date">Completed</p> Optional: if you want to add a date/status -->
+            <ul>
+                <li>Created an Excel VBA project, assisted by Gemini, to automate list generation.</li>
+                <li>The VBA macro is designed to create lists frequently used in work projects.</li>
+                <li>Significantly saves time, reduces manual effort, and minimizes errors in list preparation.</li>
+            </ul>
+            <p class="project-link">
+                <a href="https://www.linkedin.com/posts/janne-riikonen-748122180_ai-tekoaeuly-excel-activity-7291123292671766533-0xtg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI" target="_blank">View Project Post on LinkedIn</a>
+            </p>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">Excel VBA</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Rent Price Extraction & Analysis</h3>
+            <!-- <p class="project-date">Ongoing</p> Optional: if you want to add a date/status -->
+            <ul>
+                <li>Developed a Python script to extract local rent price data from personal emails.</li>
+                <li>Initially, extracted data was organized into a Google Sheets file for analysis.</li>
+                <li>An updated version now populates a MySQL database with the rent data.</li>
+                <li>The data from MySQL is integrated with PowerBI for enhanced visualization and reporting.</li>
+            </ul>
+            <p class="project-link">
+                <a href="https://www.linkedin.com/posts/janne-riikonen-748122180_n%C3%B6rttivaroitus-viikonloppuaamuisin-kuluu-activity-7273992446437380096-K2CZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI" target="_blank">View Project Post on LinkedIn</a>
+            </p>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">Python</span><span class="tech-tag">Gemini API</span><span class="tech-tag">MySQL</span><span class="tech-tag">PowerBI</span><span class="tech-tag">Google Sheets</span></p>
+        </div>
+        <div class="project-item">
+            <h3>Online Resume / Portfolio</h3>
+            <!-- <p class="project-date">Ongoing</p> Optional: if you want to add a date/status -->
+            <ul>
+                <li>Developed a personal online resume and project portfolio to showcase skills and work.</li>
+                <li>Built using fundamental web technologies: HTML for structure and CSS for styling.</li>
+                <li>Focused on creating a clean, professional, and responsive design.</li>
+                <li>Hosted on GitHub Pages for easy access and version control.</li>
+                <li>Includes separate sections for professional projects and hobby creations.</li>
+            </ul>
+            <p class="project-link"><a href="https://github.com/RnJ1998/OnlineResume" target="_blank">View the Repo on GitHub</a></p>
+            <p class="project-tech"><strong>Technologies:</strong> <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">GitHub Pages</span><span class="tech-tag">Google Analytics 4</span><span class="tech-tag">GDPR compliance</span></p>
+        </div>
+        <div class="project-item">
+            <h3>OPC UA Server and Client Learning Project</h3>
+            <ul>
+                <li>Developed a demonstration of an OPC UA (Open Platform Communications Unified Architecture) server and client using Python.</li>
+                <li>Simulates a basic industrial process, exposing variables like "Temperature" and "Pressure" and a "Multiply" remote method.</li>
+                <li>The client connects to the server, browses its address space, reads/writes data, invokes methods, and subscribes to real-time updates.</li>
+                <li>Implemented secure communication using self-signed X.509 certificates for both server and client.</li>
+                <li>Containerized both applications using Docker and Docker Compose for easy setup and deployment.</li>
+            </ul>
+            <p class="project-link">
+                <a href="https://github.com/RnJ1998/OPC_UA_Project" target="_blank">View the Repo on GitHub</a>
+            </p>
+            <p class="project-tech">
+                <strong>Technologies:</strong> <span class="tech-tag">Python</span><span class="tech-tag">OPC UA</span><span class="tech-tag">Docker</span><span class="tech-tag">Git</span>
+            </p>
+        </div>
+    </section>
+
+    <div class="back-link">
+        <a href="index.html">Back to Resume</a>
+    </div>
+</body>
+</html>

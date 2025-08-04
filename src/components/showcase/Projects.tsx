@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
-import music from '../../assets/pictures/projects/music.gif';
 
 export interface ProjectsProps {}
 
@@ -72,9 +70,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             <br />
             <p>
                 Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                projects I've done in that field. Enjoy!
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
@@ -84,20 +80,6 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     title="Software"
                     subtitle="PROJECTS"
                     route="software"
-                />
-                <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
-                />
-                <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
                 />
             </div>
         </div>
@@ -136,18 +118,6 @@ const styles: StyleSheetCSS = {
     computerIcon: {
         width: 56,
         height: 56,
-    },
-    musicIcon: {
-        width: 48,
-        height: 48,
-    },
-    arrowIcon: {
-        width: 48,
-        height: 48,
-    },
-    artIcon: {
-        width: 21 * 2,
-        height: 37 * 2,
     },
 };
 

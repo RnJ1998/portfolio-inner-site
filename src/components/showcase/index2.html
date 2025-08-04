@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-937K718VK1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-937K718VK1');
+    </script>
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="silktide-consent-manager.css">
+    <script src="silktide-consent-manager.js"></script>
+    <script>
+silktideCookieBannerManager.updateCookieBannerConfig({
+  background: {
+    showBackground: true
+  },
+  cookieIcon: {
+    position: "bottomLeft"
+  },
+  cookieTypes: [
+    {
+      id: "necessary",
+      name: "Necessary",
+      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+      required: true,
+      onAccept: function() {
+        console.log('Add logic for the required Necessary here');
+      }
+    },
+    {
+      id: "analytics",
+      name: "Analytical",
+      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+      defaultValue: true,
+      onAccept: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_analytics',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          analytics_storage: 'denied',
+        });
+      }
+    },
+    {
+      id: "advertising",
+      name: "Advertising",
+      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+      onAccept: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+        });
+        dataLayer.push({
+          'event': 'consent_accepted_advertising',
+        });
+      },
+      onReject: function() {
+        gtag('consent', 'update', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
+      }
+    }
+  ],
+  text: {
+    banner: {
+      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. Learn more in our <a href=\"cookie-policy.html\" target=\"_blank\">Cookie Policy.</a></p>",
+      acceptAllButtonText: "Accept all",
+      acceptAllButtonAccessibleLabel: "Accept all cookies",
+      rejectNonEssentialButtonText: "Reject non-essential",
+      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+      preferencesButtonText: "Preferences",
+      preferencesButtonAccessibleLabel: "Toggle preferences"
+    },
+    preferences: {
+      title: "Customize your cookie preferences",
+      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+      creditLinkText: "Get this banner for free",
+      creditLinkAccessibleLabel: "Get this banner for free"
+    }
+  },
+  position: {
+    banner: "bottomCenter"
+  }
+});
+    </script>
+    <title>Janne Riikonen - Online Resume</title>
+    <style>
+        /* Basic CSS for a clean, professional look */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 15px auto; /* Reduced top/bottom margin */
+            padding: 15px; /* Reduced padding */
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header { /* Added for flex layout */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .header-text-content { /* Wrapper for text in header */
+            flex-grow: 1; /* Allows text content to take up available space */
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 20px; /* Reduced margin */
+        }
+        h1 {
+            text-align: left; /* Changed for header layout */
+            font-size: 2.5em;
+            margin-bottom: 8px; /* Reduced margin */
+            border-bottom: none;
+        }
+        .tagline {
+            font-size: 1.1em;
+            color: #7f8c8d; /* A slightly lighter, more subtle color */
+            margin-top: -5px; /* Pull it up closer to the h1 */
+            margin-bottom: 15px; /* Add some space before the contact info */
+            margin-left: 2px; /* Small indent to align nicely */
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; /* space between items */
+            align-items: center;
+            padding-top: 5px; /* Add a little space from the name */
+            font-size: 0.9em;
+            color: #555;
+        }
+        .contact-info span, .contact-info a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px; /* space between icon and text */
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .contact-info svg {
+            width: 16px;
+            height: 16px;
+            fill: #555; /* Icon color */
+        }
+        section {
+            margin-bottom: 15px; /* Reduced margin */
+            background-color: #fff;
+            padding: 12px; /* Reduced padding */
+            border-radius: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 4px; /* Reduced margin */
+            position: relative;
+            padding-left: 18px; /* Slightly adjusted for visual balance with smaller margins */
+        }
+        ul li::before {
+            content: '•';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 12px; /* Reduced margin */
+        }
+        .job-title, .degree {
+            font-weight: bold;
+            color: #34495e;
+        }
+        .company-location, .university-location {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        .dates {
+            float: right;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        /* NEW CSS ADDED HERE to reduce space between date lines */
+        .dates p {
+            margin: 0; /* Remove default top and bottom margin of paragraphs */
+            line-height: 1.2; /* Adjust line height for closer spacing */
+        }
+        /* END NEW CSS */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px; /* Reduced gap */
+        }
+        .skill-item {
+            background-color: #e0f2f7;
+            padding: 4px 8px; /* Reduced padding */
+            border-radius: 3px;
+            font-size: 0.9em;
+            color: #2980b9;
+        }
+        .projects-link {
+            text-align: center;
+            margin-top: 25px; /* Reduced margin */
+            padding-top: 15px; /* Reduced padding */
+            border-top: 1px solid #eee;
+        }
+        .projects-link a {
+            display: inline-block;
+            background-color: #3498db; /* Blue button */
+            color: white;
+            padding: 8px 18px; /* Reduced padding */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Add some space to the right of each button */
+            margin-bottom: 10px; /* Add space below if they wrap */
+        }
+        .projects-link a:last-child {
+            margin-right: 0; /* No margin for the last button in the row */
+        }
+        .projects-link a:hover {
+            background-color: #3498db;
+        }
+        /* Style for the profile image if you choose to include it */
+        .profile-pic-container {
+            text-align: center;
+            margin-bottom: 0; /* Adjusted for header placement */
+            margin-left: 15px; /* Kept the reduced space from previous adjustment */
+            flex-shrink: 0; /* Prevent image container from shrinking */
+        }
+        .profile-pic {
+            width: 140px; /* Adjusted size for header */
+            height: 140px;
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures the image covers the area, might crop */
+            object-position: 50% 15%; /* Adjusts image position; 50% horizontal (center), 55% vertical (slightly down) */
+            border: 3px solid #3498db;
+        }
+        /* Style for links within section list items */
+        section ul li a {
+            color: #3498db; /* Matches the contact-info link color */
+            text-decoration: none; /* Removes underline by default */
+        }
+        section ul li a:hover {
+            text-decoration: underline; /* Adds underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-text-content">
+            <h1>Janne Riikonen</h1>
+            <p class="tagline">Electrical Engineer & Technology Enthusiast</p>
+             <div class="contact-info">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.976 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.274 1.765 11.842 11.842 0 00.757.433.62.62 0 00.28.14l.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" clip-rule="evenodd" /></svg>
+                    Lappeenranta, Finland
+                </span>
+                <a href="mailto:janneriikonen0@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" /><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" /></svg>
+                    janneriikonen0@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/janne-riikonen-748122180/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="profile-pic-container">
+            <img src="image.JPG" alt="Janne Riikonen" class="profile-pic">
+        </div>
+    </header>
+
+    <section>
+        <h2>Profile</h2>
+        <p>With a professional foundation in electrification, my passion extends to exploring and creating with technology. I'm an engineer who enjoys applying a versatile skill set to navigate intricate problems, from large-scale professional endeavors to personal deep dives into data analysis and AI. My drive is to develop effective, innovative solutions that truly make a difference.</p>
+        <p>Feel free to explore my professional, hobby, and academic projects below to see my work in action!</p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="dates">5.2023 – Present</div>
+            <p class="job-title">EIA-Designer</p>
+            <p class="company-location">Granlund Oy | Lappeenranta</p>
+            <ul>
+                <li>EIA modernization projects </li>
+                <li>Field instrumentation and cabinet design, commissioning </li>
+                <li>Substation secondary design projects </li>
+                <li>Short circuit calculations and relay settings </li>
+                <li>Substation switching operation design </li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="dates">
+                <p>4.2022 – 4.2023</p>
+                <p>& 4.2021 – 9.2021</p>
+            </div>
+            <p class="job-title">EIA-Supervisor</p>
+            <p class="company-location">Kemira Chemicals Oy | Lappeenranta</p>
+            <ul>
+                <li>Supervision of electricians and automation technicians </li>
+                <li>Instrument and automation system maintenance work </li>
+                <li>Shutdown resource planning </li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="dates">11.2021 – 1.2022</div>
+            <p class="job-title">Electrical Network Designer</p>
+            <p class="company-location">Asset Vision Oy | Lappeenranta</p>
+            <ul>
+                <li>Distribution network design </li>
+                <li>Timble NIS Medium and Low voltage design </li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="dates">5.2024 – Present</div>
+            <p class="job-title">Chairman of the Board</p>
+            <p class="company-location">As Oy Veljestalo | Lappeenranta</p>
+            <ul>
+                <li>Board management of a 42 apartment housing company </li>
+                <li>Maintenance work bids, contractor meetings </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <div class="dates">2018 – 2023</div>
+            <p class="degree">MSc in Technology, Electrical</p>
+            <p class="university-location">LUT-university | Lappeenranta</p>
+            <ul>
+                <li>Electricity Grids and Markets -major </li>
+                <li>Business Economics -minor </li>
+                <li>GPA: 4,17/5, with honors </li>
+                <li>Thesis work: "<a href="https://urn.fi/URN:NBN:fi-fe2023040434888" target="_blank">Teollisuusverkon 500 ja 400 V Jakelujännitteiden Vertailu Case Kemira Chemicals Kuusankosken tehtaat</a>" Grade: 5/5 </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills & Certifications</h2>
+        <h3>Software & Tools:</h3>
+        <div class="skills-list">
+            <span class="skill-item">ABB DOC </span>
+            <span class="skill-item">ETAP </span>
+            <span class="skill-item">Trimble NIS </span>
+            <span class="skill-item">CADMATIC </span>
+            <span class="skill-item">SAP ERP </span>
+            <span class="skill-item">M-FILES </span>
+            <span class="skill-item">TOPVIEW (Power Quality) </span>
+        </div>
+        <h3>I/O Systems & Control Platforms:</h3>
+        <div class="skills-list">
+            <span class="skill-item">Valmet, Siemens, WAGO, ABB, Honeywell, Schneider -I/O design</span>
+            <span class="skill-item">TIA Portal</span>
+            <span class="skill-item">InTouch HMI</span>
+            <span class="skill-item">LOGO!</span>
+            <span class="skill-item">Valmet DNA (use experience)</span>
+            <span class="skill-item">OPC UA </span>
+        </div>
+        <h3>Programming & Query Language Technologies:</h3>
+        <div class="skills-list">
+            <span class="skill-item">SQL queries / MySQL </span>
+            <span class="skill-item">MATLAB </span>
+            <span class="skill-item">Python </span>
+            <span class="skill-item">Excel VBA </span>
+            <span class="skill-item">HTML / CSS </span>
+            <span class="skill-item">Git version control </span>
+            <span class="skill-item">Docker containers </span>
+        </div>
+        <h3>Certificates & Licenses:</h3>
+        <div class="skills-list">
+            <span class="skill-item">Occupational safety </span>
+            <span class="skill-item">SFS6002 </span>
+            <span class="skill-item">Live working <1kV </span>
+            <span class="skill-item">Hot work certificate </span>
+            <span class="skill-item">FRC emergency first aid </span>
+            <span class="skill-item">B-driver's licence </span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Studying housing and stock markets </li>
+            <li>Programming little projects of interest ("View Hobby Creations" below) </li>
+            <li>Football at competitive amateur level (<a href="https://tulospalvelu.palloliitto.fi/person/91315/player/seasons" target="_blank">Link to player profile at Palloliitto.fi</a>)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Finnish: Native </li>
+            <li>English: Excellent </li>
+            <li>German: Basics </li>
+            <li>Swedish: Basics </li>
+        </ul>
+    </section>
+
+    <div class="projects-link">
+        <p>Want to see more of my work?</p>
+        <a href="projects.html">View Professional Projects</a>
+        <a href="hobbies.html">View Hobby Creations</a>
+        <a href="academic_projects.html">View Academic Projects</a>
+    </div>
+
+</body>
+</html>
