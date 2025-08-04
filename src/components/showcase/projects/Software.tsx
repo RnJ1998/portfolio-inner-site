@@ -115,7 +115,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
+                    {/* <VideoAsset src={saga} /> */}
                     <div style={styles.caption}>
                         <p>
                             <sub>
@@ -131,7 +131,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://www.linkedin.com/posts/janne-riikonen-748122180_vibecoding-activity-7318177786643279872-Wr8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI""
+                            href="https://www.linkedin.com/posts/janne-riikonen-748122180_vibecoding-activity-7318177786643279872-Wr8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI"
                         >
                             <p>
                                 <b>[LinkedIn]</b> - Post About the Project
@@ -150,7 +150,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={scroll} />
+                    {/* <VideoAsset src={scroll} /> */}
                     <p style={styles.caption}>
                         <sub>
                             <b>Figure 3:</b> Excel generator in action.

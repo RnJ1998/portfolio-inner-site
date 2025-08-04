@@ -92,24 +92,33 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div className="text-block">
                 <ul>
                     <li>
-                        <p>Distribution network design</p>
+                        <p>Distribution network design with Trimble NIS</p>
                     </li>
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>As Oy Veljestalo</h1>
+                        <h4>Lappeenranta</h4>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Chairman of the Board</h3>
+                        <b>
+                            <p>5.2024 – Present</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <ul>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
+                            Board management of a 42 apartment housing company
                         </p>
+                    </li>
+                    <li>
+                        <p>Maintenance work bids, contractor meetings</p>
                     </li>
                 </ul>
             </div>
