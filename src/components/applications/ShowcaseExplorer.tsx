@@ -7,6 +7,8 @@ import Experience from '../showcase/Experience';
 import Projects from '../showcase/Projects';
 import Contact from '../showcase/Contact';
 import SoftwareProjects from '../showcase/projects/Software';
+import WorkProjects from '../showcase/projects/WorkProjects';
+import AcademicProjects from '../showcase/projects/AcademicProjects';
 //import MusicProjects from '../showcase/projects/Music';
 //import ArtProjects from '../showcase/projects/Art';
 import VerticalNavbar from '../showcase/VerticalNavbar';
@@ -42,6 +44,14 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                         <Route
                             path="/projects/software"
                             element={<SoftwareProjects />}
+                        />
+                        <Route
+                            path="/projects/work"
+                            element={<WorkProjects />}
+                        />
+                        <Route
+                            path="/projects/academic"
+                            element={<AcademicProjects />}
                         />
                     </Routes>
                 </div>

@@ -7,6 +7,9 @@ import React from 'react';
 //import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
 import ResumeDownload from '../ResumeDownload';
 //import VideoAsset from '../../general/VideoAsset';
+import koli from '../../../assets/pictures/koli.png';
+import excel from '../../../assets/pictures/excel.jpg';
+import vuokra from '../../../assets/pictures/vuokra.png';
 
 export interface SoftwareProjectsProps {}
 
@@ -30,7 +33,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     https:\\riikonen.site is my portfolio website, and also the
                     website you are on right now. This project is cloned from Henry Heffernan's 
                     repository on GitHub and used as the base for my website.
-                    Originally I Developed a simple personal online resume and project portfolio to showcase skills and work
+                    Originally I developed a simple personal online resume and project portfolio to showcase skills and work
                     but then took a look at what other people had built and found this!
                     It has now taken its final form and I am updating information to it regularly.
                 </p>
@@ -61,9 +64,9 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://"
+                            href="https://riikonen.site/"
                         >
-                            <p>riikonen.site
+                            <p>
                                 <b>[3D Site]</b> - riikonen.site
                             </p>
                         </a>
@@ -72,10 +75,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://riikonen.site/"
+                            href="rnj1998.github.io/portfolio-inner-site/"
                         >
                             <p>
-                                <b>[OS Site]</b> - janneriikonen github tähän
+                                <b>[OS Site]</b> - rnj1998.github.io/portfolio-inner-site/
                             </p>
                         </a>
                     </li>
@@ -86,7 +89,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                             href="https://github.com/henryjeff/portfolio-website"
                         >
                             <p>
-                                <b>[GitHub]</b> - 3D Site Repository
+                                <b>[GitHub]</b> - Original 3D Site Repository
                             </p>
                         </a>
                     </li>
@@ -94,10 +97,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/RnJ1998/portfolio-inner-site"
+                            href="https://github.com/henryjeff/portfolio-inner-site"
                         >
                             <p>
-                                <b>[GitHub]</b> - OS Site Repository
+                                <b>[GitHub]</b> - Original OS Site Repository
                             </p>
                         </a>
                     </li>
@@ -114,15 +117,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     Aims to rediscover lost memories from emails while exploring AI and API functionalities.
                 </p>
                 <br />
+                <p>
+                    <b>Technologies:</b> Python, Gemini API, Google Sheets API, Gmail API
+                </p>
+                <br />
                 <div className="captioned-image">
-                    {/* <VideoAsset src={saga} /> */}
-                    <div style={styles.caption}>
-                        <p>
-                            <sub>
-                                <b>Figure 2: </b> Tähän joku kuva.
-                            </sub>
-                        </p>
-                    </div>
+                    <img src={koli} style={styles.image_small} alt="Koli national park" />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 1: </b> A fridge magnet produced via Gemini API.
+                        </sub>
+                    </p>
                 </div>
                 <br />
                 <h3>Links:</h3>
@@ -149,11 +154,15 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     Significantly saves time, reduces manual effort, and minimizes errors in list preparation.
                 </p>
                 <br />
+                <p>
+                    <b>Technologies:</b> Excel VBA
+                </p>
+                <br />
                 <div className="captioned-image">
-                    {/* <VideoAsset src={scroll} /> */}
+                    <img src={excel} style={styles.image} alt="Excel list generator" />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Excel generator in action.
+                            <b>Figure 2:</b> Excel generator in action.
                         </sub>
                     </p>
                 </div>
@@ -173,6 +182,53 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     </li>
                 </ul>
             </div>
+            <div className="text-block">
+                <h2>Rent Price Extraction & Analysis</h2>
+                <br />
+                <p>
+                    Developed a Python script to extract local rent price data
+                    from personal emails. Initially, extracted data was
+                    organized into a Google Sheets file for analysis. An
+                    updated version now populates a MySQL database with the
+                    rent data. The data from MySQL is integrated with PowerBI
+                    for enhanced visualization and reporting.
+                </p>
+                <br />
+                <p>
+                    <b>Technologies:</b> Python, Gemini API, MySQL, PowerBI,
+                    Google Sheets
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <img src={vuokra} style={styles.image_small} alt="Vuokrakehitys" />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 3:</b> Project analysis visualization.
+                        </sub>
+                    </p>
+                </div>
+            </div>
+            <div className="text-block">
+                <h2>OPC UA Server and Client Learning Project</h2>
+                <br />
+                <p>
+                    Developed a demonstration of an OPC UA (Open Platform
+                    Communications Unified Architecture) server and client
+                    using Python. Simulates a basic industrial process,
+                    exposing variables like "Temperature" and "Pressure" and a
+                    "Multiply" remote method. The client connects to the
+                    server, browses its address space, reads/writes data,
+                    invokes methods, and subscribes to real-time updates.
+                    Implemented secure communication using self-signed X.509
+                    certificates for both server and client. Containerized both
+                    applications using Docker and Docker Compose for easy setup
+                    and deployment.
+                </p>
+                <br />
+                <p>
+                    <b>Technologies:</b> Python, OPC UA, Docker, Git
+                </p>
+            </div>
             <ResumeDownload />
         </div>
     );
@@ -185,6 +241,16 @@ const styles: StyleSheetCSS = {
     },
     caption: {
         width: '80%',
+    },
+    image: {
+        height: 'auto',
+        width: '80%',
+        maxWidth: 800,
+    },
+    image_small: {
+        height: 'auto',
+        width: '80%',
+        maxWidth: 500,
     },
 };
 
