@@ -18,16 +18,16 @@ const About: React.FC<AboutProps> = (props) => {
             <div className="text-block">
                 <p>
                     I'm an electrical/automation engineer working at Granlund! In May
-                    of 2023 I graduated from LUT University
+                    2023, I graduated from LUT University
                     with my MSc in Technology (Electrical).
                 </p>
                 <br />
                 <p>
-                    Thank you for taking the time to check out my portfolio. I
-                    really hope you enjoy exploring it. This portfolio is not originally
-                    built by me. I've only made my modifications to the source code by Henry Heffernan (henryheffernan.com).
-                    That is one of the great things about humanity for me. We can build on other's work
-                    and create novel things. For example, not one person on this earth can build smart phone from the ground up, it is a huge collaborative effort.
+                    Thank you for taking the time to check out my portfolio.
+                    I really hope you enjoy exploring it. This portfolio was not originally
+                    built by me; I've only made my own modifications to the source code by Henry Heffernan (henryheffernan.com).
+                    That is one of the great things about humanity for me: we can build on others' work
+                    and create novel things. For example, not one person on this earth can build a smartphone from the ground up; it is a huge collaborative effort.
                 </p>
                 <br />
                 <p>
@@ -36,7 +36,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <Link to="/contact">this page</Link> or shoot me an email at{' '}
                     <a href="mailto:janneriikonen0@gmail.com">
                         janneriikonen0@gmail.com
-                    </a>
+                    </a>.
                 </p>
             </div>
             <ResumeDownload />
@@ -46,13 +46,13 @@ const About: React.FC<AboutProps> = (props) => {
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                     <div style={{ flex: 1, paddingRight: '1rem' }}>
                         <p>
-                            If I recall correctly, at 8 years old our class was given an assignment
-                            to write about the most important invention in history. For me it immidiately
-                            was Electricity. Looking back and refining the idea, I probably meant that the ability to harness electricity as a 
+                            If I recall correctly, when I was 8 years old, our class was given an assignment
+                            to write about the most important invention in history. For me, it immediately
+                            was electricity. Looking back and refining the idea, I probably meant that the ability to harness electricity as a 
                             controllable resource was the most important invention for me.
-                            This wasn't the only reason I went on to study EE in university. I also felt that out of the available disciplines
-                            it was the most "hands on" one. Now as time has passed electricity has led me to automation and programming.
-                            I like learning new things about the world and technology and hope to insipire others to do the same.
+                            This wasn't the only reason I went on to study EE in university; I also felt that out of the available disciplines,
+                            it was the most "hands-on" one. Now, as time has passed, electricity has led me to automation and programming.
+                            I like learning new things about the world and technology, and hope to inspire others to do the same.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
@@ -66,15 +66,15 @@ const About: React.FC<AboutProps> = (props) => {
                 </div>
                 <br />
                 <p>
-                    My first encounter with programming was in university on an introductionary course to programming (Python).
-                    I was 20 years old at the time. I was interested about the possibilities of programming but it didn't really catch on
-                    until a couple years passed. I was way more into MATLAB and maths at the time. Artificial Intelligence solved the problem all beginner programmers face 
-                    - how to turn your thoughts into a language the computer understands. Development of AI tools has been really fast and impressive and I try to keep up with the changes as much as I can.
+                    My first encounter with programming was in university, in an introductory course to programming (Python).
+                    I was 20 years old at the time. I was interested in the possibilities of programming, but it didn't really catch on
+                    until a couple of years passed. I was much more into MATLAB and maths at the time. Artificial Intelligence solved the problem all beginner programmers face: 
+                    how to turn your thoughts into a language the computer understands. The development of AI tools has been really fast and impressive, and I try to keep up with the changes as much as I can.
                 </p>
                 <br />
                 <p>
-                    I by no means am a good programmer, I vibecode most of my projects and they're pretty simple in complexity.
-                    It is a interesting hobby for the weekends and this page is the culmination of my work so far. This page is a showcase of my work and acts as a platform for me to keep improving.
+                    I am by no means a good programmer; I "vibecode" most of my projects and they're pretty simple in complexity.
+                    It is an interesting hobby for the weekends, and this page is the culmination of my work so far. This page is a showcase of my work and acts as a platform for me to keep improving.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -98,10 +98,10 @@ const About: React.FC<AboutProps> = (props) => {
                     <h3>My Hobbies</h3>
                     <br />
                     <p>
-                        I play alot of sports. Most notably football. It encompasses pretty much all aspects of my life as training sessions
+                        I play a lot of sports, most notably football. It encompasses pretty much all aspects of my life, as training sessions
                         and matches take up the majority of my free time. 
-                        Other sports I do are running, tennis, the gym, and what ever might come up.
-                        I like to study the stock market and housing markets aswell. 
+                        Other sports I do are running, tennis, going to the gym, and whatever else might come up.
+                        I also like to study the stock market and housing markets.
                     </p>
                     <br />
                     <div className="captioned-image">
@@ -115,7 +115,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <br />
                     <p>
                         You can find more about my hobby projects as well as work projects
-                        under the PROJECTS tab on left.
+                        under the PROJECTS tab on the left.
                     </p>
                 </div>
                 <br />
@@ -127,13 +127,13 @@ const About: React.FC<AboutProps> = (props) => {
                 </p>
                 <br />
                 <p>
-                    If you have any questions or comments I would love to hear
+                    If you have any questions or comments, I would love to hear
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
                     <a href="mailto:janneriikonen0@gmail.com">
                         janneriikonen0@gmail.com
-                    </a>
+                    </a>.
                 </p>
             </div>
         </div>
