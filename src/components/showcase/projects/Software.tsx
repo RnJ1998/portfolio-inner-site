@@ -107,51 +107,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>Vacation Tracker</h2>
-                <br />
-                <p>
-                    Developed a Python script utilizing Google Gemini API, Google Sheets, and Gmail.
-                    The script filters emails and employs the Gemini API to identify vacation-related messages.
-                    Relevant emails are further processed by the Gemini API to extract dates, locations, and destinations.
-                    Leverages Gemini API's image generation capabilities to create a "virtual fridge magnet" for each trip.
-                    Aims to rediscover lost memories from emails while exploring AI and API functionalities.
-                </p>
-                <br />
-                <p>
-                    <b>Technologies:</b> Python, Gemini API, Google Sheets API, Gmail API
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <img src={koli} style={styles.image_small} alt="Koli national park" />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 1: </b> A fridge magnet produced via Gemini API.
-                        </sub>
-                    </p>
-                </div>
-                <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://www.linkedin.com/posts/janne-riikonen-748122180_vibecoding-activity-7318177786643279872-Wr8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI"
-                        >
-                            <p>
-                                <b>[LinkedIn]</b> - Post About the Project
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div className="text-block">
                 <h2>Excel List Generator</h2>
                 <br />
                 <p>
-                    Created an Excel VBA project, assisted by Gemini, to automate list generation.
-                    The VBA macro is designed to create lists frequently used in work projects.
-                    Significantly saves time, reduces manual effort, and minimizes errors in list preparation.
+                    In many work projects, creating lists of components, cables, and nameplates is a repetitive and time-consuming task. 
+                    Manually compiling these lists often leads to errors and inefficiencies, especially when dealing with small but frequent projects.
+                </p>
+                <br />
+                <p>
+                    To address this, I developed an Excel VBA macro that automates the generation of these lists. 
+                    The macro streamlines the process by allowing users to quickly select the correct template and fill in project information quickly, significantly reducing manual effort and minimizing mistakes.
+                    It also includes a built-in database of commonly used components and cables, making it easy to populate lists with accurate and up-to-date information.
                 </p>
                 <br />
                 <p>
@@ -162,7 +128,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <img src={excel} style={styles.image} alt="Excel list generator" />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 2:</b> Excel generator in action.
+                            <b>Figure 1:</b> Excel generator in action.
                         </sub>
                     </p>
                 </div>
@@ -183,20 +149,63 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>Rent Price Extraction & Analysis</h2>
+                <h2>Vacation Tracker</h2>
                 <br />
                 <p>
-                    Developed a Python script to extract local rent price data
-                    from personal emails. Initially, extracted data was
-                    organized into a Google Sheets file for analysis. An
-                    updated version now populates a MySQL database with the
-                    rent data. The data from MySQL is integrated with PowerBI
-                    for enhanced visualization and reporting.
+                    Over time, it's easy for the details of past trips and holidays to fade away, especially if they're not documented or revisited. 
+                    Small reminders, like fridge magnets, help keep those memories present, but many journeys end up forgotten in old emails.
                 </p>
                 <br />
                 <p>
-                    <b>Technologies:</b> Python, Gemini API, MySQL, PowerBI,
-                    Google Sheets
+                    To help bring these memories back, I developed a Python script utilizing Google Gemini API, Google Sheets, and Gmail.
+                    The script scans emails to identify vacation-related messages, then uses Gemini API to extract dates, locations, and destinations.
+                    It also generates a "virtual fridge magnet" for each trip, making it easier to rediscover and appreciate past travels.
+                </p>
+                <br />
+                <p>
+                    <b>Technologies:</b> Python, Gemini API, Google Sheets API, Gmail API
+                </p>
+                <br />
+                <div className="captioned-image">
+                    <img src={koli} style={styles.image_small} alt="Koli national park" />
+                    <p style={styles.caption}>
+                        <sub>
+                            <b>Figure 2: </b> A fridge magnet produced via Gemini API.
+                        </sub>
+                    </p>
+                </div>
+                <br />
+                <h3>Links:</h3>
+                <ul>
+                    <li>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.linkedin.com/posts/janne-riikonen-748122180_vibecoding-activity-7318177786643279872-Wr8C?utm_source=share&utm_medium=member_desktop&rcm=ACoAACq7f6gBsinXvEVuxTjuw5cb48DMxvI97rI"
+                        >
+                            <p>
+                                <b>[LinkedIn]</b> - Post About the Project
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className="text-block">
+                <h2>Rent Price Extraction & Analysis</h2>
+                <br />
+                <p>
+                    Many rent price services, like Oikotie, do not provide a free API for accessing local rental data. 
+                    This makes it difficult to analyze market trends or gather information for personal use without manual searching.
+                </p>
+                <br />
+                <p>
+                    To work around this limitation, I developed a Python script to extract rent price data from my own emails. 
+                    The extracted data was initially organized into a Google Sheets file for analysis, and later the process was upgraded to populate a MySQL database. 
+                    This database is then integrated with PowerBI for enhanced visualization and reporting, making it much easier to track and analyze local rent prices over time.
+                </p>
+                <br />
+                <p>
+                    <b>Technologies:</b> Python, MySQL, PowerBI, Google Sheets API
                 </p>
                 <br />
                 <div className="captioned-image">
