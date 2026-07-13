@@ -11,12 +11,26 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
                         <h1>Granlund Oy</h1>
-                        <h4>Lappeenranta</h4>
+                        <h4>Lappeenranta/Turku</h4>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>EIA-Designer</h3>
                         <b>
-                            <p>5.2023 – Present</p>
+                            <p>5.2023 – 7.2026</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>Turku Energia</h1>
+                        <h4>Naantali</h4>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>EIA-Designer</h3>
+                        <b>
+                            <p>8.2026 – Present</p>
                         </b>
                     </div>
                 </div>

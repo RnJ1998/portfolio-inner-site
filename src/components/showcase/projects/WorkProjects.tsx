@@ -51,7 +51,7 @@ const WorkProjects: React.FC<WorkProjectsProps> = (props) => {
                 </p>
                 <br />
                 <br />
-                <h3>Railway Bridge Control Modernizations, 2023 – Present</h3>
+                <h3>Railway Bridge Control Modernizations, 2023 – 2026</h3>
                 <br />
                 <p>
                     Oversaw the modernization of railway bridge control
@@ -93,7 +93,7 @@ const WorkProjects: React.FC<WorkProjectsProps> = (props) => {
             </div>
 
             <div className="text-block">
-                <h3>Power Quality and Analysis, 2023 –</h3>
+                <h3>Power Quality and Analysis, 2023 – 2026</h3>
                 <br />
                 <p>
                     Analysis of power quality issues in industrial and

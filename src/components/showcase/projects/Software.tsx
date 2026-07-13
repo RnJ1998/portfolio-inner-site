@@ -27,10 +27,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>riikonen.site</h2>
+                <h2>riikonen.online</h2>
                 <br />
                 <p>
-                    https:\\riikonen.site is my portfolio website, and also the
+                    https:\\riikonen.online is my portfolio website, and also the
                     website you are on right now. This project is cloned from Henry Heffernan's 
                     repository on GitHub and used as the base for my website.
                     Originally I developed a simple personal online resume and project portfolio to showcase skills and work
@@ -64,10 +64,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://riikonen.site/"
+                            href="https://riikonen.online/"
                         >
                             <p>
-                                <b>[3D Site]</b> - riikonen.site
+                                <b>[3D Site]</b> - riikonen.online
                             </p>
                         </a>
                     </li>
