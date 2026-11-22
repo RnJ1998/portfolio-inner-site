@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Window from '../os/Window';
 import { useInterval } from 'usehooks-ts';
 import { motion } from 'framer-motion';
-import type { MotionStyle } from 'framer-motion';
 
 export interface CreditsProps extends WindowAppProps {}
 
@@ -97,7 +96,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
                             animate={{ opacity: 1, y: -20 }}
                             transition={{ duration: 0.5 }}
                             key={`section-${CREDITS[currentSlide].title}`}
-                            style={styles.section as MotionStyle}
+                            style={styles.section}
                         >
                             <h3 style={styles.sectionTitle}>
                                 {CREDITS[currentSlide].title}
