@@ -1,5 +1,4 @@
 import React from 'react';
-import ResumeDownload from '../ResumeDownload';
 
 export interface WorkProjectsProps {}
 
@@ -9,105 +8,128 @@ const WorkProjects: React.FC<WorkProjectsProps> = (props) => {
             <h1>Work Projects</h1>
             <br />
             <div className="text-block">
-                <h3>Introduction</h3>
                 <p>
-                    This page showcases a selection of my professional work,
-                    highlighting my skills in electrical automation design,
-                    network design, and project management. Each project
-                    demonstrates my ability to apply technical knowledge to
-                    solve real-world challenges for various clients.
+                    My work spans electrical and automation design,
+                    commissioning, network and substation design, and power
+                    quality. The projects below show how that work has developed
+                    over time.
                 </p>
             </div>
 
             <div className="text-block">
-                <h3>Electrical Automation Design, 2023 – Present</h3>
-                <br />
+                <h3>Current Work | Turku Energia | Aug 2026 – Present</h3>
                 <p>
-                    Executed electrical and automation design for
-                    maintenance, modernization, and new process section
-                    projects across various industrial sites.
-                    Responsibilities included designing new motor and
-                    instrument circuits, field cabinet layouts, and
-                    control room HMI updates.
-                    Managed logic integration, software compatibility,                        and seamless integration of new equipment with
-                    existing automation systems.
+                    My current work covers power plants and district heating
+                    and cooling, across the same areas of electrical and
+                    automation design, commissioning, network and substation
+                    design.
                 </p>
-                <br />
+            </div>
+
+            <div className="text-block">
+                <h3>Selected Project Work Before Turku Energia</h3>
                 <p>
-                    <b>Technologies:</b> CADMATIC, ABB DOC, SIMATIC STEP7 /
-                    TIA Portal, InTouch, LOGO!
-                    </p>
-                <br />
-                <br />
-                <h3>Commissioning Work, 2024 – Present</h3>
-                <br />
+                    These projects were completed before I joined Turku Energia.
+                    Several ran in parallel, so the dates indicate each
+                    project's period rather than a single continuous sequence.
+                </p>
+            </div>
+
+            <div className="text-block">
+                <h3>Data-Center Substation and Medium-Voltage Distribution Pre-Design | 2026</h3>
                 <p>
-                    Comissioning work related to new equipment and
-                    modernization.
+                    Lead the pre-design work for a data-center 110/20kV substation
+                    and medium-voltage distribution system.
                 </p>
                 <p>
-                    <b>Technologies:</b> Valmet, Siemens, WAGO, ABB,
-                    Honeywell -I/O systems
+                    <b>Technologies:</b> ETAP, CADMATIC, M-FILES
                 </p>
-                <br />
-                <br />
-                <h3>Railway Bridge Control Modernizations, 2023 – 2026</h3>
-                <br />
+            </div>
+
+            <div className="text-block">
+                <h3>Battery Energy Storage System (BESS) Grid Integration | 2026</h3>
                 <p>
-                    Oversaw the modernization of railway bridge control
-                    systems, including the design of new instrumentation
-                    and field cabinets. Successfully integrated legacy bridge equipment with
-                    the new control system to ensure seamless operation.
+                    Lead the integration and pre-design work for a battery energy storage
+                    system with the electrical grid.
+                </p>
+                <p>
+                    <b>Technologies:</b> ETAP, CADMATIC, M-FILES
+                </p>
+            </div>
+
+            <div className="text-block">
+                <h3>MV Switchgear and Substation Design | 2023 – 2026</h3>
+                <p>
+                    Worked on switchgear integration with SCADA, control-cabinet
+                    design, protection-relay control circuits, and substation
+                    building layouts.
+                </p>
+                <p>
+                    <b>Technologies:</b> ETAP, ABB DOC, CADMATIC, M-FILES
+                </p>
+            </div>
+
+            <div className="text-block">
+                <h3>Distribution Network Design in Rural Areas | 2021 – 2022</h3>
+                <p>
+                    Modernized existing network components through power-flow
+                    and protection calculations, and component dimensioning.
+                </p>
+                <p>
+                    <b>Technologies:</b> Trimble NIS
+                </p>
+            </div>
+
+            <div className="text-block">
+                <h3>Electrical Automation Design | 2023 – 2026</h3>
+                <p>
+                    Designed electrical and automation systems for maintenance,
+                    modernization, and new process-section projects. Work
+                    included motor and instrument circuits, field-cabinet
+                    layouts, control-room HMI updates, and integrating new
+                    equipment with existing automation systems.
+                </p>
+                <p>
+                    <b>Technologies:</b> CADMATIC, ABB DOC, SIMATIC STEP 7 / TIA
+                    Portal, InTouch, LOGO!
+                </p>
+            </div>
+
+            <div className="text-block">
+                <h3>Railway Bridge Control Modernizations | 2023 – 2026</h3>
+                <p>
+                    Designed instrumentation, field cabinets, andmotor circuits for railway
+                    bridge control upgrades, integrating legacy equipment with
+                    new control systems.
                 </p>
                 <p>
                     <b>Technologies:</b> CADMATIC
                 </p>
-                <br />
-                <br />
-                <h3>
-                    Medium Voltage Switchgear, Substation Secondary Design, 2023 – Present
-                </h3>
-                <br />
-                <p>Switchgear integration to SCADA system. Control cabinet design and integration. Protection relay control circuit design. Substation building basic/layout design.</p>
-                <p>
-                    <b>Technologies:</b> ABB DOC, CADMATIC, M-FILES
-                </p>
             </div>
+
             <div className="text-block">
-                <h3>Network Design</h3>
-                <br />
-                <h3>Distribution Network Design in Rural Areas, 11.2021 – 01.2022</h3>
-                <br />
-                <p>Modernization of existing network components. Power flow calculations and component dimensioning. Protection calculations.</p>
+                <h3>Power-Quality Analysis | 2023 – 2026</h3>
                 <p>
-                    <b>Technologies:</b> Trimble NIS
+                    Analyzed power-quality issues in specific applications, including harmonics, flicker, and
+                    voltage dips, and provided reports.
                 </p>
-                <br />
-                <br />
-                <h3>Distribution Network Design, Industrial Network, 02.2025 – 04.2025</h3>
-                <br />
-                <p>New industrial network components dimensioning. Power flow and protections calculations.</p>
                 <p>
-                    <b>Technologies:</b> ABB DOC, ETAP
+                    <b>Technologies:</b> TOPVIEW Analyzing Software, data
+                    analysis tools
                 </p>
             </div>
 
             <div className="text-block">
-                <h3>Power Quality and Analysis, 2023 – 2026</h3>
-                <br />
+                <h3>Commissioning | 2024 – 2026</h3>
                 <p>
-                    Analysis of power quality issues in industrial and
-                    distribution networks. Harmonic analysis, flicker measurements, and voltage
-                    dip assessments. Recommendations for mitigation techniques.
+                    Commissioned new equipment and supported modernization
+                    work across a range of automation systems.
                 </p>
                 <p>
-                    <b>Technologies:</b> TOPVIEW Analyzing Software, Data
-                    Analysis Tools
+                    <b>Systems:</b> Valmet, Siemens, WAGO, ABB
                 </p>
             </div>
 
-            <br />
-            <ResumeDownload />
         </div>
     );
 };

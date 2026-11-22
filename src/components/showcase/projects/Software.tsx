@@ -5,7 +5,6 @@ import React from 'react';
 //import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
 //import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
-import ResumeDownload from '../ResumeDownload';
 //import VideoAsset from '../../general/VideoAsset';
 import koli from '../../../assets/pictures/koli.png';
 import excel from '../../../assets/pictures/excel.jpg';
@@ -24,7 +23,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 as a weekend hobby.
             </p>
             <br />
-            <ResumeDownload />
             <br />
             <div className="text-block">
                 <h2>riikonen.online</h2>
@@ -238,7 +236,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <b>Technologies:</b> Python, OPC UA, Docker, Git
                 </p>
             </div>
-            <ResumeDownload />
         </div>
     );
 };

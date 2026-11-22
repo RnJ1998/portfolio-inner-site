@@ -1,12 +1,10 @@
 import React from 'react';
-import ResumeDownload from './ResumeDownload';
 
 export interface ExperienceProps {}
 
 const Experience: React.FC<ExperienceProps> = (props) => {
     return (
         <div className="site-page-content">
-            <ResumeDownload />
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
@@ -20,6 +18,13 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         </b>
                     </div>
                 </div>
+            </div>
+            <div className="text-block">
+                <ul>
+                    <li>
+                        <p>Power plants, district heating &amp; cooling</p>
+                    </li>
+                </ul>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>

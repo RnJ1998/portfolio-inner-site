@@ -3,7 +3,6 @@ import leo from '../../assets/pictures/leo.jpg';
 import football from '../../assets/pictures/football.jpg';
 import meNow from '../../assets/pictures/currentme.jpg';
 import { Link } from 'react-router-dom';
-import ResumeDownload from './ResumeDownload';
 
 export interface AboutProps {}
 
@@ -39,7 +38,6 @@ const About: React.FC<AboutProps> = (props) => {
                     </a>.
                 </p>
             </div>
-            <ResumeDownload />
             <div className="text-block">
                 <h3>About Me</h3>
                 <br />

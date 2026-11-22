@@ -1,5 +1,4 @@
 import React from 'react';
-import ResumeDownload from '../ResumeDownload';
 
 export interface AcademicProjectsProps {}
 
@@ -230,8 +229,6 @@ const AcademicProjects: React.FC<AcademicProjectsProps> = (props) => {
                 </a>
             </div>
 
-            <br />
-            <ResumeDownload />
         </div>
     );
 };
